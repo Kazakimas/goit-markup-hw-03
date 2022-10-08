@@ -6,13 +6,43 @@
     --paragraph-color: #757575;
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: roboto, sans-serif;
     color:var(--brand-color);
 }
 
 .container {
-    width: 1170px;
+    width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -31,8 +61,6 @@ body {
 
 .header {
     background-color: var(--accent-text-color);
-    padding-top: 24px;
-    padding-bottom: 25px;
 }
 
 .header-nav {
@@ -46,6 +74,8 @@ body {
 }
 
 .header-logo {
+    padding-top: 24px;   
+    padding-bottom: 25px;   
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -122,31 +152,30 @@ body {
 .section-hero {
     background: #2F303A;
     color: var(--accent-text-color);
-}
+    text-align: center;
+}   
 
 .hero-title {
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
 
 .hero-button {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    cursor: pointer;
     border: 0px;
     letter-spacing: 0.06em;
     color: var(--accent-text-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 
 /* ----------HERO------------ */
@@ -166,6 +195,23 @@ body {
     margin: -1px;
 }
 
+.section-advances {
+    background: #F5F5F5
+
+}
+
+
+.advances-list{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 94px;
+    gap: 30px;
+}
+
+.advances-item {
+    width: 270px;
+}
+
 .advances-post-title {
     font-weight: 700;
     font-size: 14px;
@@ -177,6 +223,7 @@ body {
 }
 
 .advances-paragraph {
+    margin-top: 10px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -192,12 +239,30 @@ body {
 }
 
 .work-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
 }
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+.work-link {
+    margin-right: 30px;
+    width: 370px;
+}
+
+.work-link:nth-child(3n){
+    margin-right: 0;
+}
+
 
 /* ----------ЩО РОБИМО------------ */
 
@@ -208,7 +273,28 @@ body {
 
 }
 
+.team-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+.team-link {
+    margin-right: 30px;
+    width: 270px;
+    background-color: var(--accent-text-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.team-link:nth-child(4n){
+    margin-right: 0;
+}
+
+
 .team-title {
+    padding-top: 94px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -217,6 +303,8 @@ body {
 }
 
 .team-post-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -225,6 +313,7 @@ body {
 }
 
 .team-paragraph {
+    padding-bottom: 30px;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
@@ -238,6 +327,8 @@ body {
 
 .footer {
     background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-list :hover,
@@ -245,12 +336,15 @@ body {
     color: var(--accent-color)
 }
 
+
+
 .footer-list {
-    font-style: normal;
+    padding-top: 20px;
+    gap: 10px;
 }
 
 .footer-logo {
-font-family: 'Raleway';
+    font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -260,6 +354,7 @@ font-family: 'Raleway';
 }
 
 .footer-map {
+    padding-bottom: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -268,6 +363,7 @@ font-family: 'Raleway';
 }
 
 .footer-mail {
+    padding-bottom: 9px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
