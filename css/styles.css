@@ -11,6 +11,14 @@ body {
     color:var(--brand-color);
 }
 
+.container {
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    outline: 2px solid tomato;
+}
+
 .list {
     list-style: none;
 }
@@ -22,9 +30,20 @@ body {
 /* ----------HEADER---------- */
 
 .header {
-    background-color: var(--accent-text-color);;
+    background-color: var(--accent-text-color);
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+}
 
 .header-logo {
     font-family: 'Raleway';
@@ -39,12 +58,25 @@ body {
     color: var(--accent-color);
 }
 
+.header-list {
+    display: flex;
+    gap: 50px;
+    margin-left: 93px;
+}
+
 .header-list :hover, .header-list :focus {
     color: var(--accent-color);
 }
 
 .header-list .current {
     color: var(--accent-color);
+}
+
+.header-list .link{
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
 }
 
 .header-link {
@@ -59,7 +91,14 @@ body {
     color: var(--accent-color);
 }
 
+.header-connect {
+    display: flex;
+    gap: 50px;
+    margin-left: auto;
+}
+
 .header-mail {
+    display: inline-block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -68,6 +107,7 @@ body {
 }
 
 .header-tel {
+    display: inline-block;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -102,11 +142,11 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    border: 0px;
     letter-spacing: 0.06em;
     color: var(--accent-text-color);
     background-color: var(--accent-color);
-    cursor: pointer;
-    border: 0px;
 }
 
 /* ----------HERO------------ */
