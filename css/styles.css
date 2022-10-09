@@ -208,8 +208,6 @@ section {
 
 .section-advances {
     background: #F5F5F5;
-
-
 }
 
 
@@ -230,7 +228,6 @@ section {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--brand-color);
-
 }
 
 .advances-paragraph {
@@ -364,7 +361,6 @@ section {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--accent-text-color);
-
 }
 
 .footer-mail {
@@ -430,8 +426,6 @@ section {
     margin-bottom: 30px;
     width: 370px;
     background: #FFFFFF;
-    
-
 }
 
 .project-item:nth-child(3n){
