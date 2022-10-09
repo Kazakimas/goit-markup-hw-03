@@ -57,6 +57,11 @@ body {
     text-decoration: none;
 }
 
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 /* ----------HEADER---------- */
 
 .header {
@@ -202,7 +207,8 @@ body {
 }
 
 .section-advances {
-    background: #F5F5F5
+    background: #F5F5F5;
+
 
 }
 
@@ -210,7 +216,6 @@ body {
 .advances-list{
     display: flex;
     align-items: flex-start;
-    padding-top: 94px;
     gap: 30px;
 }
 
@@ -245,7 +250,6 @@ body {
 }
 
 .work-title {
-    padding-top: 94px;
     padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -257,7 +261,6 @@ body {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .work-link {
@@ -282,7 +285,6 @@ body {
 .team-list {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 94px;
 }
 
 .team-link {
@@ -299,7 +301,6 @@ body {
 
 
 .team-title {
-    padding-top: 94px;
     padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
@@ -417,8 +418,6 @@ body {
 /* ----------ПРОЄКТИ-------------- */
 
 .section-project{
-    padding-top: 94px;
-    padding-bottom: 94px;
     background: var(--accent-text-color);
 }
 .project-list {
@@ -431,7 +430,7 @@ body {
     margin-bottom: 30px;
     width: 370px;
     background: #FFFFFF;
-    border: 1px solid #EEEEEE;
+    
 
 }
 
@@ -443,6 +442,10 @@ body {
     margin-bottom: 0px;
 }
 
+.design{
+    border: 1px solid #EEEEEE;
+}
+
 .project-link {
     margin: 20px 24px 4px 24px;
     font-weight: 700;
@@ -450,6 +453,7 @@ body {
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--brand-color);
+    
 }
 
 .project-paragraph {
